@@ -1,7 +1,7 @@
 ### Deep Adversarial Quantization  Network for Efficient Cross-modal  Retrieval 
 
 ##### 1. Environment 
-   This is a demo on MIRFlickr dataset for our paper. 
+   This is a demo on MIRFlickr dataset for our paper.  
    We finish experiments on a server with one NVIDIA GeForce 1080Ti GPU.  
    The python version is 3.5.2.  
    These python package are used for our experiments:  
