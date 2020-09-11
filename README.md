@@ -5,11 +5,11 @@
    We finish experiments on a server with one NVIDIA GeForce 1080Ti GPU.  
    The python version is 3.5.2.  
    These python package are used for our experiments:  
-  
+ ```
     -opencv-python          3.4.2.16
     -tensorflow-gpu         1.4.0 
     -numpy                  1.16.2  
-    
+```
    You can directly run the python file _train_scripts.py_ to get results after relevant data prepared.
 
 ##### 2. Relevant data and setup 
