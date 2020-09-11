@@ -1,6 +1,6 @@
 ### Deep Adversarial Quantization  Network for Efficient Cross-modal  Retrieval 
 
-#####1. Environment 
+##### 1. Environment 
    This is a demo on MIRFlickr dataset for our paper. 
    We finish experiments on a server with one NVIDIA GeForce 1080Ti GPU.  
    The python version is 3.5.2.  
@@ -12,18 +12,18 @@
     
    You can directly run the python file----_train_scripts.py_ to get results after relevant data prepared.
 
-#####2. Relevant data and setup 
+##### 2. Relevant data and setup 
    
    Please preprocess dataset to appropriate input format and modified the 
 partition of dataset in _data_handler.py_  
    Or you can download data we preprocessed from the pan.baidu.com.  
    
-    a. modify the path of pre-trained VGGnet weights in _bone_net.py_  
+    a. modify the path of pre-trained VGGnet weights in bone_net.py 
       link: https://pan.baidu.com/s/1vag9Cag40zAxySMKt0i9lg  
       password: ij9g  
       
-    b. modify the data path and partition setting in _data_handler.py_    
-    - MIR-FLICKR:  
+    b. modify the data path and partition setting in data_handler.py   
+    MIR-FLICKR:  
       link: https://pan.baidu.com/s/1ea-TvNZAcG4e6IWZRzeB9Q  
       password: a1cv
 
