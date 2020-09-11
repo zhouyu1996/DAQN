@@ -32,10 +32,10 @@ partition of dataset in _data_handler.py_
   We should thank to these kind researchers, who unreservedly shared their source code and advice to us.  
   Including but not limited to these:
 ```
-    1. QingYuan Jiang, Nanjing University, P.R. China
-    2. Mingsheng Long, Tsinghua University, P.R. China
-    3. Yue Cao, Tsinghua University, P.R. China
-    4. Zhikai Hu, HongKong Baptist University, P.R. China
+    1. QingYuan Jiang,  Nanjing          University,  P.R. China
+    2. Mingsheng Long,  Tsinghua         University,  P.R. China
+    3. Yue        Cao， Tsinghua         University,  P.R. China
+    4. Zhikai      Hu,  HongKong Baptist University,  P.R. China
 ```
   
 ##### 4. Contact
