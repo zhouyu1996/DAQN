@@ -262,12 +262,14 @@ class DAQN(object):
                                                    self.l: l, self.train_flag: True})
                     print('===generator training===')
                     format_str = (
-                        '%s: step %4d,Classification Loss = %.4f,'
-                        'Adversarial Loss = %.4f,'
-                        'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
+                        ' %s: step %2d,'
+                        ' Classification Loss = %.3f,'
+                        ' Adversarial Loss = %.3f,'
+                        ' Boundary Controlled Triplet Loss=%.3f,'
+                        ' Quantization Loss = %.3f ')
                     print(format_str % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), global_step,
                                         label_loss, domain_class_loss,triplet_loss, cq_loss))
-                    print("G====total loss===", total_loss)
+                    print("G====Total Loss===", total_loss)
 
                     if(global_step % 10 ==0):
                         _, total_loss, label_loss, domain_class_loss, cq_loss, triplet_loss,\
@@ -281,13 +283,15 @@ class DAQN(object):
                                                        self.l: l, self.train_flag: True})
                         print('===modality discriminator training===')
                         format_str = (
-                            '%s: step %4d,Classification Loss = %.4f,'
-                            'Adversarial Loss = %.4f,'
-                            'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
+                            ' %s: step %2d,'
+                            ' Classification Loss = %.3f,'
+                            ' Adversarial Loss = %.3f,'
+                            ' Boundary Controlled Triplet Loss=%.3f,'
+                            ' Quantization Loss = %.3f ')
                         print(
                             format_str % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), global_step,
                                           label_loss, domain_class_loss, triplet_loss, cq_loss))
-                        print("G====total loss===", total_loss)
+                        print("G====Total Loss===", total_loss)
                     # update featrues
                     img_dataset.copy_batch_output(batch_img_output, config.batch_size)
                     txt_dataset.copy_batch_output(batch_txt_output, config.batch_size)
