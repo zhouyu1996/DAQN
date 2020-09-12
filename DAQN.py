@@ -261,7 +261,7 @@ class DAQN(object):
                                                    self.b_txt: text_codes,
                                                    self.l: l, self.train_flag: True})
                     print('===generator training===')
-                    ormat_str = (
+                    format_str = (
                         '%s: step %4d,Classification Loss = %.4f,'
                         'Adversarial Loss = %.4f,'
                         'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
