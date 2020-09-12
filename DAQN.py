@@ -263,7 +263,7 @@ class DAQN(object):
                     print('===generator training===')
                     ormat_str = (
                         '%s: step %4d,Classification Loss = %.4f,'
-                        'adversarial loss = %.4f,'
+                        'Adversarial Loss = %.4f,'
                         'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
                     print(format_str % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), global_step,
                                         label_loss, domain_class_loss,triplet_loss, cq_loss))
@@ -282,7 +282,7 @@ class DAQN(object):
                         print('===modality discriminator training===')
                         format_str = (
                             '%s: step %4d,Classification Loss = %.4f,'
-                            'adversarial loss = %.4f,'
+                            'Adversarial Loss = %.4f,'
                             'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
                         print(
                             format_str % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), global_step,
