@@ -261,8 +261,10 @@ class DAQN(object):
                                                    self.b_txt: text_codes,
                                                    self.l: l, self.train_flag: True})
                     print('===generator training===')
-                    format_str = (
-                        '%s: step %4d,label_loss = %.4f,domain_class_loss = %.4f,triplet_loss=%.4f,cq loss = %.4f ')
+                    ormat_str = (
+                        '%s: step %4d,Classification Loss = %.4f,'
+                        'adversarial loss = %.4f,'
+                        'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
                     print(format_str % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), global_step,
                                         label_loss, domain_class_loss,triplet_loss, cq_loss))
                     print("G====total loss===", total_loss)
@@ -279,7 +281,9 @@ class DAQN(object):
                                                        self.l: l, self.train_flag: True})
                         print('===modality discriminator training===')
                         format_str = (
-                            '%s: step %4d,label_loss = %.4f,domain_class_loss = %.4f,triplet_loss=%.4f,cq loss = %.4f ')
+                            '%s: step %4d,Classification Loss = %.4f,'
+                            'adversarial loss = %.4f,'
+                            'Boundary Controlled Triplet Loss=%.4f,cq loss = %.4f ')
                         print(
                             format_str % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), global_step,
                                           label_loss, domain_class_loss, triplet_loss, cq_loss))
