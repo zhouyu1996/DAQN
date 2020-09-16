@@ -57,7 +57,7 @@ class DataSet(object):
             del images, tags, labels
             print("dataset split successfully!")
         else:
-            self.load = True
+            self.load = False
             print('dataset split error!')
 
     # return a dic including the training data
@@ -81,17 +81,9 @@ class DataSet(object):
 
 if __name__ == '__main__':
     # test code
-    a  = DataSet()
+    a = DataSet()
     t1 = a.import_train()
-    ind = 2313
+    ind = 2333
     img = t1[1]
     tmp = img[ind]
     print(img.shape)
-    # print(img[1])
-    txt = t1[2]
-    label = t1[3]
-    print(np.array(txt[ind]).min(), np.array(txt[ind]).max())
-    print(label[ind])
-    cv2.imshow("org", img[ind])
-    cv2.imshow("change", tmp[:,:,::-1])
-    cv2.waitKey(0)
