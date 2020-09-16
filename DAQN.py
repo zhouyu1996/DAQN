@@ -368,5 +368,5 @@ def train_test(a):
     query_txt = Dataset(query_data[2], query_data[3], config.subspace_num * config.subcenter_num, config.output_dim)
     ret = model.validation(database_img, database_txt, query_img, query_txt)
     print(ret)
-    del model
+    del model, db_data, query_data
     return ret
