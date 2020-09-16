@@ -15,8 +15,8 @@ import config
 
 def pairwise_distances(embeddings1,embeddings2):
     X1_X2 = tf.matmul(embeddings1, tf.transpose(embeddings2))
-    cos = tf.div(X1_X2, config.output_dim)
-    sim = tf.div(cos, 2) + 0.5
+    inner_dis = tf.div(X1_X2, config.output_dim)
+    sim = tf.div(inner_dis, 2) + 0.5
     return sim
 
 def masked_maximum(data, mask, dim=1):
@@ -86,8 +86,8 @@ def triplet_semihard_loss(embeddings1,embeddings2,img_labels,txt_labels,margin=0
                 math_ops.multiply(loss_mat, mask_positives), 0.0)),
     num_positives, name='triplet_semihard_loss')
 
-    margin_p = 0.7
-    margin_n = 0.3
+    margin_p = config.margin_p
+    margin_n = config.margin_n
     loss_mat1 = math_ops.add(margin_p, -pdist_matrix)
     loss_mat2 = math_ops.add(-margin_n, semi_hard_negatives)
     triplet_loss1 = math_ops.truediv(
