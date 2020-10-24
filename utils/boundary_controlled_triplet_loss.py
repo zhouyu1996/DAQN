@@ -95,13 +95,13 @@ def triplet_semihard_loss(embeddings1,embeddings2,img_labels,txt_labels,margin=0
           math_ops.maximum(
               math_ops.multiply(loss_mat1, mask_positives), 0.0)),
       num_positives, name='triplet_semihard_loss1')
-
     triplet_loss2 = math_ops.truediv(
       math_ops.reduce_sum(
           math_ops.maximum(
               math_ops.multiply(loss_mat2, mask_positives), 0.0)),
       num_positives, name='triplet_semihard_loss2')
-
+    # final boundary controlled triplet loss
+    # we equally treat these two additional items
     return triplet_loss + 0.5 * (triplet_loss1 + triplet_loss2)
 
 if __name__ == '__main__':
