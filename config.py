@@ -19,7 +19,7 @@ txt_dim = 1386
 label_dim = 24
 image_width = 256
 image_height = 256
-image_channel = 3
+image_channel = 2
 
 subcenter_num = 256
 output_dim = 128
