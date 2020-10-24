@@ -1,4 +1,4 @@
-### Deep Adversarial Quantization  Network for Efficient Cross-modal  Retrieval 
+### Deep Adversarial Quantization  Network for Cross-modal  Retrieval 
 
 ##### 1. Environment 
    This is a demo on MIRFlickr dataset for our paper.  
