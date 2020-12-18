@@ -30,6 +30,7 @@ Or you can download the data we preprocessed from the pan.baidu.com.
 
 ##### 3. Thanks
 We should thank to these kind researchers, who unreservedly share their source code and advice to us.  
+
 Including but not limited to these:
 
 ```
@@ -41,7 +42,9 @@ Including but not limited to these:
 
 ##### 4. Contact
 If you have any question, don't be hesitate to contact Yu Zhou at 18990848997@163.com.  
+
 If you are a Chinese, you can surely write an e-mail in Chinese. 
+
 If you find DAQN useful in your research, please consider citing us: 
 
 ```
