@@ -47,7 +47,9 @@ If you are a Chinese, you can surely write an e-mail in Chinese.
 
 If you find DAQN useful in your research, please consider citing us: 
 
-```
+------
+
 Y. Zhou, Y. Feng, M. Zhou, B. Qiang, L. Hou U and J. Zhu, "Deep Adversarial Quantization Network for Cross-Modal Retrieval," ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021, pp. 4325-4329, doi: 10.1109/ICASSP39728.2021.9414247.
-```
+
+------
 
